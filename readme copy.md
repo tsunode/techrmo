@@ -17,8 +17,9 @@
 #212121 (cinza escuro)
 #2B2B2B (cinza escuro)
 
-
-
+- if passou da meia noite e existe uma palavra gerada aquela dia, busca do BD
+- if passou da meia noite e não existe uma palavra gerada aquela dia, busca no chatGpt e salva no BD
+- Todo dia a a palavra ficará no redis para rápido acesso
 
 #3EC863 (verde 100)
 #34B455 (verde 200)
