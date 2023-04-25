@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Key } from '@/modules/game/components/Keyboard/Key';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <h1>teste</h1>
+      <Key />
     </>
   );
 }

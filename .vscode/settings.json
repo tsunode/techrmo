@@ -10,7 +10,7 @@
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "css.validate": false,
   "less.validate": false,
@@ -34,8 +34,10 @@
           ]
         }
       ],
-      // "declaration-block-trailing-semicolon": null,
       "no-descending-specificity": null
     }
-  }
+  },
+  "colorize.colorized_variables": [
+    "SASS"
+  ],
 }
