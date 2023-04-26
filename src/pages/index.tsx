@@ -11,12 +11,12 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <h1>Testing a basic functionality :D</h1>
-      <div style={{display: 'flex', margin: '20px', gap: "10px"}}> 
-      <Key/>
-      <Key/>
-      <Key/>
-      <Key/>
-      <Key/>
+      <div style={{ display: 'flex', margin: '20px', gap: '10px' }}>
+        <Key />
+        <Key />
+        <Key />
+        <Key />
+        <Key />
       </div>
     </>
   );
