@@ -59,3 +59,8 @@
 #7A77A0 (verde 700)
 #8461AA (verde 800)
 #8E4BB4 (verde 900)
+
+- Storybook
+- CI/CD
+  - SONAR
+  - Verificação de Padrão

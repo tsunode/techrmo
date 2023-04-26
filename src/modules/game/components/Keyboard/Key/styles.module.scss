@@ -1,5 +1,3 @@
-@import "variables";
-
 .container {
   display: flex;
   color: $color-primary;
@@ -12,4 +10,18 @@
 
 .teste-w {
   width: auto;
+}
+
+.oi {
+  width: "auto";
+}
+
+.batata {
+  display: block;
+}
+
+@include desktop() {
+  .container {
+    background: $color-secondary;
+  }
 }
