@@ -1,6 +1,13 @@
 .container {
-  display: flex;
-  color: $color-primary;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  outline: none;
 }
 
 .teste {
@@ -22,6 +29,6 @@
 
 @include desktop() {
   .container {
-    background: $color-secondary;
+    background: $color-secondary-transparent-300;
   }
 }
