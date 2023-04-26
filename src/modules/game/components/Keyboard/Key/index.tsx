@@ -1,6 +1,6 @@
 import { ChangeEvent, KeyboardEvent, useRef } from 'react';
 
-import { isElement } from '@/shared/helpers/hasElement';
+import { isAllowedElement } from '@/shared/helpers/hasElement';
 import { container } from './styles.module.scss';
 
 export const Key = () => {
@@ -9,7 +9,9 @@ export const Key = () => {
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const nextInput = event.target.nextElementSibling;
 
-    if (isElement<'INPUT'>(nextInput, 'INPUT')) {
+    if (isAllowedElement(nextInput, 'TEXTAREA')) {
+
+
       nextInput.focus();
     }
   };
