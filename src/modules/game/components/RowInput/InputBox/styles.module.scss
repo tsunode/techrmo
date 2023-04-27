@@ -10,23 +10,6 @@
   outline: none;
 }
 
-.teste {
-  display: inline;
-  width: 100px;
-}
-
-.teste-w {
-  width: auto;
-}
-
-.oi {
-  width: "auto";
-}
-
-.batata {
-  display: block;
-}
-
 @include desktop() {
   .container {
     background: $color-secondary-transparent-300;

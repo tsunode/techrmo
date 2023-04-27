@@ -1,8 +1,16 @@
-type ElementsAllowed = {
+type AllowedElements = {
   INPUT: HTMLInputElement,
   TEXTAREA: HTMLTextAreaElement,
 };
-type AllowedKeys = keyof ElementsAllowed;
+type AllowedKeys = keyof AllowedElements;
 
-export const isAllowedElement = <T extends AllowedKeys>
-  (element: Element | null, type: T): element is ElementsAllowed[T] => element?.tagName === type;
+const isAllowedElement = <T extends AllowedKeys>
+  (element: Element | null, type: T): element is AllowedElements[T] => element?.tagName === type;
+
+export const getAllowedElement = <T extends AllowedKeys>(element: Element | null, type: T) => {
+  if (isAllowedElement(element, type)) {
+    return element;
+  }
+
+  return null;
+};
