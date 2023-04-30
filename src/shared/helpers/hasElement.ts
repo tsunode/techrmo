@@ -2,6 +2,7 @@ type AllowedElements = {
   INPUT: HTMLInputElement,
   TEXTAREA: HTMLTextAreaElement,
 };
+
 type AllowedKeys = keyof AllowedElements;
 
 const isAllowedElement = <T extends AllowedKeys>
