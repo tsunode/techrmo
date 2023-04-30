@@ -13,10 +13,10 @@
   },
   "husky": {
     "hooks": {
-      "applypatch-msg": "echo Teste",
-      "pre-applypatch": "echo Teste",
-      "post-applypatch": "echo Teste",
-      "pre-commit": "echo Teste"
+      "applypatch-msg": "echo [Husky] Olá, mundo",
+      "pre-applypatch": "echo [Husky] Olá, mundo",
+      "post-applypatch": "echo [Husky] Olá, mundo",
+      "pre-commit": "echo [Husky] Olá, mundo"
     }
   },
   "dependencies": {
