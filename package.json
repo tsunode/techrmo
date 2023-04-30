@@ -13,10 +13,10 @@
   },
   "husky": {
     "hooks": {
-      "applypatch-msg": "echo '\n[Husky] applypatch-msg\n'",
-      "pre-applypatch": "echo '\n[Husky] pre-applypatch\n'",
-      "post-applypatch": "echo '\n[Husky] post-applypatch\n'",
-      "pre-commit": "echo '\n[Husky] pre-commit\n'"
+      "applypatch-msg": "echo \n[Husky] applypatch-msg\n",
+      "pre-applypatch": "echo \n[Husky] pre-applypatch\n",
+      "post-applypatch": "echo \n[Husky] post-applypatch\n",
+      "pre-commit": "echo \n[Husky] pre-commit\n"
     }
   },
   "dependencies": {
