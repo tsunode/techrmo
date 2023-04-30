@@ -13,10 +13,7 @@
   },
   "husky": {
     "hooks": {
-      "applypatch-msg": "echo [Husky] Olá, mundo",
-      "pre-applypatch": "echo [Husky] Olá, mundo",
-      "post-applypatch": "echo [Husky] Olá, mundo",
-      "pre-commit": "echo [Husky] Olá, mundo"
+      "pre-commit": "pnpm run test"
     }
   },
   "dependencies": {
