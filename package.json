@@ -9,12 +9,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "vitest"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pnpm run test"
-    }
+    "test": "vitest",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "13.3.1",
