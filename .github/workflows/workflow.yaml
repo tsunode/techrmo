@@ -1,0 +1,10 @@
+name: Unit and Integration Tests Execution
+
+on: pull_request
+
+jobs:
+  unit-test:
+    uses: ./jobs/unit-test.yaml
+  sonar:
+    uses: ./jobs/sonar.yaml
+     
