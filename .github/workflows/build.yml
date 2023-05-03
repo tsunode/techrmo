@@ -6,13 +6,12 @@ on:
       - main
       - feature/*
       - fix/*
-env:
-  SONAR_ORGANIZATION: ${{ github.context.SONAR_ORGANIZATION }}
-  SONAR_ORGANIZATION2: ${{ github.context.SONAR.SONAR_ORGANIZATION }}
 jobs:
   sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-latest
+    environment: 
+      name: SONAR
     steps:
       - uses: actions/checkout@v3
         with:
