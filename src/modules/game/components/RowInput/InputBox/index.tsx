@@ -7,10 +7,6 @@ import { container } from './styles.module.scss';
 export const InputBox = () => {
   const ref = useRef<HTMLInputElement | null>(null);
 
-  if (true) {
-    console.log('teste');
-  }
-
   const handleKeyUp = (event: KeyboardEvent<HTMLInputElement>) => {
     event.preventDefault();
 
