@@ -11,8 +11,6 @@ jobs:
     name: SonarCloud
     runs-on: ubuntu-latest
     steps:
-      - name: Set default branch name         
-        run: echo "BRANCH_NAME=${GITHUB_REF##*/}" >> $GITHUB_ENV
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
@@ -21,3 +19,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_ORGANIZATION: ${{vars.SONAR_ORGANIZATION}}
+          SONAR_PROJECT_KEY: ${{vars.SONAR_PROJECT_KEY}}
