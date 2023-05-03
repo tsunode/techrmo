@@ -7,7 +7,8 @@ on:
       - feature/*
       - fix/*
 env:
-  SONAR_ORGANIZATION: ${{ vars.SONAR_ORGANIZATION }}
+  SONAR_ORGANIZATION: ${{ github.context.SONAR_ORGANIZATION }}
+  SONAR_ORGANIZATION2: ${{ github.context.SONAR.SONAR_ORGANIZATION }}
 jobs:
   sonarcloud:
     name: SonarCloud
