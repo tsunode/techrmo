@@ -4,7 +4,7 @@ on: pull_request
 
 jobs:
   unit-test:
-    uses: ./.github/workflows/jobs/unit-test.yaml
+    uses: ./.github/workflows/unit-test.yaml
   sonar:
-    uses: ./.github/workflows/jobs/sonar.yaml
+    uses: ./.github/workflows/sonar.yaml
      
