@@ -1,0 +1,23 @@
+name: Unit and Integration Tests Execution
+
+on: pull_request
+
+jobs:
+  unit-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Using Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 8.
+      - name: Install dependencies
+        run: pnpm install
+      - name: Run build
+        run: pnpm run build
+      - name: Run tests
+        run: pnpm run test
