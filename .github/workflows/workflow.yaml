@@ -1,5 +1,4 @@
-name: Unit and Integration Tests Execution
-
+name: WorkFlow Main
 on: pull_request
 
 jobs:
