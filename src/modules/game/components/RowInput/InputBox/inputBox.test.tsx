@@ -1,5 +1,7 @@
 import {
-  expect, describe, it,
+  expect,
+  describe,
+  it,
 } from 'vitest';
 import { render } from '@testing-library/react';
 
