@@ -7,6 +7,10 @@ const config: StorybookConfig = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    {
+      name: '@storybook/addon-styling',
+      options: {},
+    },
   ],
   framework: {
     name: "@storybook/nextjs",
@@ -22,22 +26,6 @@ const config: StorybookConfig = {
         '@': path.resolve(__dirname, '..', 'src')
       };
     }
-
-    config.module?.rules?.push({
-      test: /\.scss$/,
-      use: [
-        {
-          loader: 'sass-loader',
-          options: {
-            sassOptions: {
-              includePaths: [
-                path.resolve(__dirname, "..", "src", "shared", "scss")
-              ],
-            },
-          },
-        },
-      ],
-    });
 
     return config;
   },

@@ -11,8 +11,8 @@
     "lint": "next lint",
     "test": "vitest",
     "prepare": "husky install",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "dev:storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build"
   },
   "dependencies": {
     "next": "13.3.4",
@@ -20,10 +20,10 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "sass-loader": "^13.2.2",
     "@storybook/addon-essentials": "^7.0.8",
     "@storybook/addon-interactions": "^7.0.8",
     "@storybook/addon-links": "^7.0.8",
+    "@storybook/addon-styling": "^1.0.6",
     "@storybook/blocks": "^7.0.8",
     "@storybook/nextjs": "^7.0.8",
     "@storybook/preset-scss": "^1.0.3",
