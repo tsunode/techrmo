@@ -7,6 +7,10 @@ import styles from './styles.module.scss';
 export const InputBox = () => {
   const ref = useRef<HTMLInputElement | null>(null);
 
+  if (true) {
+    console.log('test');
+  }
+
   const handleKeyUp = (event: KeyboardEvent<HTMLInputElement>) => {
     event.preventDefault();
 
