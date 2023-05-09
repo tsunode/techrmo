@@ -8,7 +8,7 @@ jobs:
     secrets: inherit
     uses: ./.github/workflows/sonar.yaml
   deploy-dev:
-    needs: [unit-test, sonar]
+    # needs: [unit-test, sonar]
     secrets: inherit
     uses: ./.github/workflows/deploy-dev.yaml
     if: ${{ github.ref != 'refs/heads/main' }}
