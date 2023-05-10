@@ -6,7 +6,7 @@ env:
 on:
   workflow_call:
 jobs:
-  Deploy-Preview:
+  deploy-prod:
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
