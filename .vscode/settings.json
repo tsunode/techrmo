@@ -40,8 +40,4 @@
   "colorize.colorized_variables": [
     "SASS"
   ],
-  "sonarlint.connectedMode.project": {
-    "connectionId": "techrmo",
-    "projectKey": "techrmo"
-  },
 }

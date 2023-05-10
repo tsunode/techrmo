@@ -2,7 +2,7 @@ import { useRef, KeyboardEvent } from 'react';
 
 import { getAllowedElement } from '@/shared/helpers/hasElement';
 
-import styles from './styles.module.scss';
+import { container } from './styles.module.scss';
 
 export const InputBox = () => {
   const ref = useRef<HTMLInputElement | null>(null);
@@ -44,7 +44,7 @@ export const InputBox = () => {
   return (
     <input
       type='text'
-      className={styles.container}
+      className={container}
       ref={ref}
       onKeyDown={(event) => handleKeyUp(event)}
     />

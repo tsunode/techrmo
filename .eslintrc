@@ -21,15 +21,6 @@
     "@typescript-eslint"
   ],
   "rules": {
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": [
-          "src/**/*.test.tsx",
-          "src/**/*.stories.ts"
-        ]
-      }
-    ],
     "no-use-before-define": "off",
     "import/order": [
       "error",
