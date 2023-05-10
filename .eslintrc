@@ -26,7 +26,8 @@
       {
         "devDependencies": [
           "src/**/*.test.tsx",
-          "src/**/*.stories.ts"
+          "src/**/*.stories.ts",
+          "public/docs/*"
         ]
       }
     ],

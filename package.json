@@ -12,7 +12,7 @@
     "test": "vitest",
     "prepare": "husky install",
     "dev:storybook": "storybook dev -p 6006",
-    "build:storybook": "storybook build"
+    "build:storybook": "storybook build -o dist/docs"
   },
   "dependencies": {
     "next": "13.3.4",
