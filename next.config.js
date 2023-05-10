@@ -4,11 +4,7 @@ const path = require('path');
 const nextConfig = {
   reactStrictMode: true,
   sassOptions: {
-    includePaths: [path.join(__dirname, 'src', 'styles')],
-    additionalData: `
-      @import "src/styles/variables.scss";
-      @import "src/styles/mixin.scss";
-    `,
+    includePaths: [path.join(__dirname, 'src', 'shared', 'scss')],
   },
 };
 

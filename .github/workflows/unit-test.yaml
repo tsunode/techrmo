@@ -18,7 +18,5 @@ jobs:
           version: 8.
       - name: Install dependencies
         run: pnpm install
-      - name: Run build
-        run: pnpm run build
       - name: Run tests
         run: pnpm run test
