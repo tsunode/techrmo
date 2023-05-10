@@ -15,6 +15,14 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: 8.
+      - name: Install Dependences
+        run: pnpm install
+      - name: Build Storybook
+        run: pnpm run build:storybook
+      - name: Copy Storybook build to Vercel public directory
+        run: |
+          mkdir -p public/docs
+          cp -R dist/docs/. public/docs
       - name: Install Vercel CLI
         run: pnpm install --global vercel@latest
       - name: Pull Vercel Environment Information
