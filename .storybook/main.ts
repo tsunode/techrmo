@@ -20,7 +20,7 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
-  "webpackFinal": async (config, { configType }) => {
+  "webpackFinal": async (config) => {
     if (config.resolve) {
       config.resolve.alias = {
         ...config.resolve.alias,
