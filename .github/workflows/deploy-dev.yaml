@@ -7,6 +7,7 @@ on:
   workflow_call:
 jobs:
   Deploy-Preview:
+    if: ${{ github.ref != 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
