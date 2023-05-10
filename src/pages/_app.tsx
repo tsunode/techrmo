@@ -1,6 +1,6 @@
 import { Poppins } from 'next/font/google';
 import type { AppProps } from 'next/app';
-import '../styles/main.scss';
+import '../shared/scss/main.scss';
 
 const poppins = Poppins({ weight: ['300', '500', '800'], subsets: ['latin'] });
 
